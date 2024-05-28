@@ -19,7 +19,7 @@ for i in range(4):
 laki=turtle.Turtle()
 laki.shape('turtle')
 laki.color('green')
-laki.shapesize(3)
+laki.shapesize(5)
 laki.up()
 
 ball=turtle.Turtle()
@@ -27,7 +27,7 @@ s.register_shape('./ball.gif')
 #ball.shape('circle')
 ball.shape('./ball.gif')
 #ball.shapesize(3)
-ball.color('yellow')
+ball.color('red')
 ball.up()
 ball.goto(random.randint(-260,260),random.randint(-260,260))
 
@@ -40,9 +40,9 @@ wr.write('amteaz='+str(score),font=('bkoodak',12,'bold'))
 
 
 def move_right():
-    laki.right(30)
+    laki.right(40)
 def move_left():
-    laki.left(30)
+    laki.left(40)
 s.listen()
 s.onkey(move_right,'Right')
 s.onkey(move_left,'Left')
